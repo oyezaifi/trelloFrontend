@@ -12,7 +12,7 @@ const BoardList = () => {
 
   const handleCreateBoard = async (name) => {
     try {
-      const response = await fetch("http://localhost:5000/api/boards/create", {
+      const response = await fetch("https://trellobackend-production.up.railway.app/api/boards/create", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

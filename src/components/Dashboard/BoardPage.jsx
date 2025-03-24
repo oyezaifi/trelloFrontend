@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import KanbanBoard from './kanbanboard';
 
-const API_URL = 'http://localhost:5000';
+const API_URL = "https://trellobackend-production.up.railway.app";
 
 const BoardPage = () => {
   const { boardId } = useParams();

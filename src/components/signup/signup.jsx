@@ -63,7 +63,7 @@ const SignupPage = () => {
       setIsLoading(true);
 
       try {
-        const response = await axios.post("http://localhost:5000/api/auth/register", formData);
+        const response = await axios.post("https://trellobackend-production.up.railway.app/api/auth/register", formData);
         localStorage.setItem("userToken", response.data.token);
         alert("Signup successful! Redirecting to Login...");
         navigate("/login"); // Redirecting to the Login page after successful signup
